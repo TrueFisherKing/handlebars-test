@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <h1>Handlebars Tutorial</h1>
+    <div id="pets-container"></div>
+  </div>
+
+
+  <script id="petsTemplate" type="text/x-handlebars-template">
+    {{#each pets}}
+    <div>
+
+      <h2>{{name}} is {{calcAge birth}}</h2>
+      <p>Likes {{#each foods}} {{this}} {{/each}}</p>
+    </div>
+
+    {{/each}}
+  </script>
+
+  <script type="text/javascript" src="js/handlebars-v4.0.11.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
